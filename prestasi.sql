@@ -4999,3 +4999,4 @@ insert into prestasi (namaPrestasi, tahunPrestasi, tingkatPrestasi, pencapaian, 
 insert into prestasi (namaPrestasi, tahunPrestasi, tingkatPrestasi, pencapaian, sertifikatPrestasi) values ('Silat', 2019, 'Internasional', 'Juara Harapan I', 'http://dummyimage.com/140x100.png/dddddd/000000');
 insert into prestasi (namaPrestasi, tahunPrestasi, tingkatPrestasi, pencapaian, sertifikatPrestasi) values ('Turnamen Basket', 2020, 'Nasional', 'Finalis', 'http://dummyimage.com/235x100.png/5fa2dd/ffffff');
 
+select * from prestasi

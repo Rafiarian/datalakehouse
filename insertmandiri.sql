@@ -5000,3 +5000,6 @@ INSERT INTO pesertaMandiri(userID,noPendaftaranSNBT,nilaiRaporID,prestasiID,kemi
 INSERT INTO pesertaMandiri(userID,noPendaftaranSNBT,nilaiRaporID,prestasiID,kemitraanID,skorPorto,skorTKAID,pilihan_1, plihan_2, pilihan_3, pilihan_4) VALUES (4999,597823674999,4999,4999,1749,NULL,4999,35,34,NULL,NULL);
 INSERT INTO pesertaMandiri(userID,noPendaftaranSNBT,nilaiRaporID,prestasiID,kemitraanID,skorPorto,skorTKAID,pilihan_1, plihan_2, pilihan_3, pilihan_4) VALUES (5000,597823675000,5000,5000,1750,NULL,5000,35,35,NULL,NULL);
 
+alter table pesertaMandiri
+alter column noPendaftaranSNBT varchar(50)
+

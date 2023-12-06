@@ -5498,3 +5498,5 @@ insert into nilaiTKA (nilaiTPA, nilaiTKB) values (637, 332);
 insert into nilaiTKA (nilaiTPA, nilaiTKB) values (773, 597);
 insert into nilaiTKA (nilaiTPA, nilaiTKB) values (476, 507);
 insert into nilaiTKA (nilaiTPA, nilaiTKB) values (559, 997);
+
+select * from nilaiTKA

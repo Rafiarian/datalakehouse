@@ -1,3 +1,7 @@
+-- Enable IDENTITY_INSERT for the 'provinsi' table
+SET IDENTITY_INSERT kemitraan ON;
+
+
 insert into kemitraan (kemitraanID, namaInstitusi, dokumenPendukung) values (1, 'Voonyx', 'http://dummyimage.com/103x100.png/5fa2dd/ffffff');
 insert into kemitraan (kemitraanID, namaInstitusi, dokumenPendukung) values (2, 'Jabbertype', 'http://dummyimage.com/182x100.png/cc0000/ffffff');
 insert into kemitraan (kemitraanID, namaInstitusi, dokumenPendukung) values (3, 'Youopia', 'http://dummyimage.com/152x100.png/dddddd/000000');
@@ -98,3 +102,6 @@ insert into kemitraan (kemitraanID, namaInstitusi, dokumenPendukung) values (97,
 insert into kemitraan (kemitraanID, namaInstitusi, dokumenPendukung) values (98, 'Zoonoodle', 'http://dummyimage.com/143x100.png/ff4444/ffffff');
 insert into kemitraan (kemitraanID, namaInstitusi, dokumenPendukung) values (99, 'Buzzdog', 'http://dummyimage.com/130x100.png/ff4444/ffffff');
 insert into kemitraan (kemitraanID, namaInstitusi, dokumenPendukung) values (100, 'Demizz', 'http://dummyimage.com/149x100.png/ff4444/ffffff');
+
+-- Disable IDENTITY_INSERT after the insert
+SET IDENTITY_INSERT kemitraan OFF;

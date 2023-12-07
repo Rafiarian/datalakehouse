@@ -1,3 +1,5 @@
+-- Enable IDENTITY_INSERT for the 'provinsi' table
+SET IDENTITY_INSERT provinsi ON;
 DECLARE @json NVARCHAR(MAX) =
 N'[
     {
@@ -137,18 +139,16 @@ N'[
       "name": "PAPUA"
     }
   ]'
--- Enable IDENTITY_INSERT for the 'provinsi' table
-SET IDENTITY_INSERT provinsi ON;
 
 -- Your insert statement with explicit values for the identity column
-INSERT INTO provinsi (provinsiID, name)
+INSERT INTO provinsi (provinsiID, namaProvinsi)
 SELECT
    provinsiID,
-   name
+   namaProvinsi
 FROM OPENJSON(@json)
 WITH (
     provinsiID int '$.provinsiID',
-    name NVARCHAR(50) '$.name'
+    namaProvinsi NVARCHAR(50) '$.name'
 );
 
 -- Disable IDENTITY_INSERT after the insert

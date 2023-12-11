@@ -29,7 +29,7 @@ CREATE TABLE provinsi (provinsiID int NOT NULL IDENTITY, namaProvinsi varchar(25
 -- SQLINES LICENSE FOR EVALUATION USE ONLY
 CREATE TABLE userHasStatus (statusPesertaID int NOT NULL IDENTITY, namaStatus varchar(50) NOT NULL, PRIMARY KEY (statusPesertaID));
 -- SQLINES LICENSE FOR EVALUATION USE ONLY
-CREATE TABLE userMyITS (userID int NOT NULL IDENTITY, kodePendaftaran varchar(255) NOT NULL, namaLengkap varchar(255) NOT NULL, emailPeserta varchar(255) NOT NULL, password varchar(255) NOT NULL, NIK int NOT NULL, TTL date NOT NULL, jenisKelamin varchar(32) NOT NULL, pasFoto varchar(256) NOT NULL, scanKTP varchar(256) NOT NULL, scanKK varchar(256) NOT NULL, fotoKTP varchar(256) NOT NULL, waktuPendaftaran datetime2(0) NOT NULL, asalDomisiliID int NOT NULL, statusPesertaID int NOT NULL, asalSekolahID int NOT NULL, jurusanSekolahID int NOT NULL, PRIMARY KEY (userID));
+CREATE TABLE userMyITS (userID int NOT NULL IDENTITY, kodePendaftaran varchar(255) NOT NULL, namaLengkap varchar(255) NOT NULL, emailPeserta varchar(255) NOT NULL, password varchar(255) NOT NULL, NIK bigint NOT NULL, TTL date NOT NULL, jenisKelamin varchar(32) NOT NULL, pasFoto varchar(256) NOT NULL, scanKTP varchar(256) NOT NULL, scanKK varchar(256) NOT NULL, fotoKTP varchar(256) NOT NULL, waktuPendaftaran datetime2(0) NOT NULL, asalDomisiliID int NOT NULL, statusPesertaID int NOT NULL, asalSekolahID int NOT NULL, jurusanSekolahID int NOT NULL, PRIMARY KEY (userID));
 ALTER TABLE kota ADD CONSTRAINT FKkota600375 FOREIGN KEY (provinsiID) REFERENCES provinsi (provinsiID);
 ALTER TABLE pesertaIUP ADD CONSTRAINT FKpesertaIUP76449 FOREIGN KEY (userID) REFERENCES userMyITS (userID);
 ALTER TABLE userMyITS ADD CONSTRAINT FKuserMyITS498972 FOREIGN KEY (asalDomisiliID) REFERENCES kota (kotaID);

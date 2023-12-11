@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+--DBCC CHECKIDENT ('nilaiRapor', RESEED, 0);
+>>>>>>> b5b9d5b18f18dbe04a21ceedac3be4e2241bbd24
 insert into nilaiRapor (jurusanSekolahID, mtk_1, mtk_2, mtk_3, mtk_4, mtk_5, fis_1, fis_2, fis_3, fis_4, fis_5, kim_1, kim_2, kim_3, kim_4, kim_5) values (1, 84.63, 72.28, 70.73, 83.46, 74.84, 83.49, 71.75, 84.17, 74.88, 65.06, 82.72, 72.81, 99.69, 83.62, 86.12);
 insert into nilaiRapor (jurusanSekolahID, mtk_1, mtk_2, mtk_3, mtk_4, mtk_5, fis_1, fis_2, fis_3, fis_4, fis_5, kim_1, kim_2, kim_3, kim_4, kim_5) values (1, 75.32, 95.38, 99.95, 79.68, 91.87, 79.73, 91.62, 68.3, 67.58, 69.45, 81.92, 86.37, 95.98, 75.21, 98.37);
 insert into nilaiRapor (jurusanSekolahID, mtk_1, mtk_2, mtk_3, mtk_4, mtk_5, fis_1, fis_2, fis_3, fis_4, fis_5, kim_1, kim_2, kim_3, kim_4, kim_5) values (1, 87.15, 82.31, 82.26, 66.2, 74.78, 86.96, 70.23, 96.08, 94.75, 92.94, 89.41, 84.01, 96.83, 72.9, 97.49);

@@ -1,3 +1,4 @@
+DBCC CHECKIDENT ('nilaiRapor', RESEED, 0);
 insert into nilaiRapor (jurusanSekolahID, mtk_1, mtk_2, mtk_3, mtk_4, mtk_5, fis_1, fis_2, fis_3, fis_4, fis_5, kim_1, kim_2, kim_3, kim_4, kim_5) values (1, 84.63, 72.28, 70.73, 83.46, 74.84, 83.49, 71.75, 84.17, 74.88, 65.06, 82.72, 72.81, 99.69, 83.62, 86.12);
 insert into nilaiRapor (jurusanSekolahID, mtk_1, mtk_2, mtk_3, mtk_4, mtk_5, fis_1, fis_2, fis_3, fis_4, fis_5, kim_1, kim_2, kim_3, kim_4, kim_5) values (1, 75.32, 95.38, 99.95, 79.68, 91.87, 79.73, 91.62, 68.3, 67.58, 69.45, 81.92, 86.37, 95.98, 75.21, 98.37);
 insert into nilaiRapor (jurusanSekolahID, mtk_1, mtk_2, mtk_3, mtk_4, mtk_5, fis_1, fis_2, fis_3, fis_4, fis_5, kim_1, kim_2, kim_3, kim_4, kim_5) values (1, 87.15, 82.31, 82.26, 66.2, 74.78, 86.96, 70.23, 96.08, 94.75, 92.94, 89.41, 84.01, 96.83, 72.9, 97.49);
@@ -5998,3 +5999,5 @@ insert into nilaiRapor (jurusanSekolahID, sos_1, sos_2, sos_3, sos_4, sos_5, eko
 insert into nilaiRapor (jurusanSekolahID, sos_1, sos_2, sos_3, sos_4, sos_5, eko_1, eko_2, eko_3, eko_4, eko_5, geo_1, geo_2, geo_3, geo_4, geo_5, sej_1, sej_2, sej_3, sej_4, sej_5) values (2, 80.22, 66.13, 67.43, 65.77, 88.54, 69.46, 73.07, 93.23, 78.37, 80.13, 80.44, 76.93, 65.37, 95.63, 67.9, 82.96, 92.08, 95.96, 69.32, 86.15);
 insert into nilaiRapor (jurusanSekolahID, sos_1, sos_2, sos_3, sos_4, sos_5, eko_1, eko_2, eko_3, eko_4, eko_5, geo_1, geo_2, geo_3, geo_4, geo_5, sej_1, sej_2, sej_3, sej_4, sej_5) values (2, 91.09, 91.95, 81.35, 86.7, 78.09, 79.39, 94.87, 76.87, 68.02, 94.89, 83.66, 79.73, 87.1, 76.1, 89.53, 86.18, 66.83, 81.46, 96.53, 85.85);
 insert into nilaiRapor (jurusanSekolahID, sos_1, sos_2, sos_3, sos_4, sos_5, eko_1, eko_2, eko_3, eko_4, eko_5, geo_1, geo_2, geo_3, geo_4, geo_5, sej_1, sej_2, sej_3, sej_4, sej_5) values (2, 92.57, 80.97, 87.0, 91.68, 68.58, 72.7, 88.17, 97.68, 73.84, 93.31, 89.99, 94.08, 71.71, 71.85, 83.66, 95.07, 74.53, 94.1, 96.68, 65.76);
+
+select * from nilaiRapor

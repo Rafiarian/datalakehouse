@@ -1,3 +1,5 @@
+-- kalau udah ke auto increment pakein ini DBCC CHECKIDENT ('departemen', RESEED, 0);
+
 INSERT INTO departemen (namaDepartemen, fakultasID ) VALUES ('FISIKA', '1 ');
 INSERT INTO departemen (namaDepartemen, fakultasID ) VALUES ('MATEMATIKA', '1 ');
 INSERT INTO departemen (namaDepartemen, fakultasID ) VALUES ('STATISTIKA', '1 ');

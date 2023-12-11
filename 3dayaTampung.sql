@@ -455,3 +455,5 @@ INSERT INTO dayaTampung (departemenID, jalurID, tahun, jumlah) VALUES ('35', '4'
 INSERT INTO dayaTampung (departemenID, jalurID, tahun, jumlah) VALUES ('36', '4', '2023', '4');
 INSERT INTO dayaTampung (departemenID, jalurID, tahun, jumlah) VALUES ('37', '4', '2023', '8');
 INSERT INTO dayaTampung (departemenID, jalurID, tahun, jumlah) VALUES ('38', '4', '2023', '7');
+
+select * from dayaTampung

@@ -38548,5 +38548,3 @@ INSERT INTO asalSekolah (namaSekolah
 INSERT INTO asalSekolah (namaSekolah
 ) VALUES ('SMAN 25 JAYAPURA
 ');
-INSERT INTO asalSekolah (namaSekolah
-) VALUES ('');

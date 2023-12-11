@@ -21,7 +21,7 @@ CREATE TABLE nilaiTKA (skorTKAID int NOT NULL IDENTITY, nilaiTPA int NOT NULL, n
 -- SQLINES LICENSE FOR EVALUATION USE ONLY
 CREATE TABLE pesertaIUP (pesertaIUPID int NOT NULL IDENTITY, batch int NOT NULL, nilaiSertifikatCambridge int, skorSAT int, userID int NOT NULL, skorTKAID int, pilihan_1 int NOT NULL, pilihan_2 int NOT NULL, nilaiRaporID int NOT NULL, PRIMARY KEY (pesertaIUPID));
 -- SQLINES LICENSE FOR EVALUATION USE ONLY
-CREATE TABLE pesertaMandiri (pesertaMandiriID int NOT NULL IDENTITY, noPendaftaranSNBT int NOT NULL, skorPorto int, kemitraanID int, prestasiID int, userID int NOT NULL, skorTKAID int NOT NULL, pilihan_1 int NOT NULL, plihan_2 int NOT NULL, pilihan_3 int, pilihan_4 int, nilaiRaporID int NOT NULL, PRIMARY KEY (pesertaMandiriID));
+CREATE TABLE pesertaMandiri (pesertaMandiriID int NOT NULL IDENTITY, noPendaftaranSNBT varchar(255) NOT NULL, skorPorto int, kemitraanID int, prestasiID int, userID int NOT NULL, skorTKAID int NOT NULL, pilihan_1 int NOT NULL, pliihan_2 int NOT NULL, pilihan_3 int, pilihan_4 int, nilaiRaporID int NOT NULL, PRIMARY KEY (pesertaMandiriID));
 -- SQLINES LICENSE FOR EVALUATION USE ONLY
 CREATE TABLE prestasi (prestasiID int NOT NULL IDENTITY, namaPrestasi varchar(255) NOT NULL, tahunPrestasi int NOT NULL, tingkatPrestasi varchar(255) NOT NULL, pencapaian varchar(255) NOT NULL, sertifikatPrestasi varchar(255) NOT NULL, PRIMARY KEY (prestasiID));
 -- SQLINES LICENSE FOR EVALUATION USE ONLY
@@ -29,7 +29,7 @@ CREATE TABLE provinsi (provinsiID int NOT NULL IDENTITY, namaProvinsi varchar(25
 -- SQLINES LICENSE FOR EVALUATION USE ONLY
 CREATE TABLE userHasStatus (statusPesertaID int NOT NULL IDENTITY, namaStatus varchar(50) NOT NULL, PRIMARY KEY (statusPesertaID));
 -- SQLINES LICENSE FOR EVALUATION USE ONLY
-CREATE TABLE userMyITS (userID int NOT NULL IDENTITY, kodePendaftaran varchar(255) NOT NULL, namaLengkap varchar(255) NOT NULL, emailPeserta varchar(255) NOT NULL, password varchar(255) NOT NULL, NIK bigint NOT NULL, TTL date NOT NULL, jenisKelamin varchar(32) NOT NULL, pasFoto varchar(256) NOT NULL, scanKTP varchar(256) NOT NULL, scanKK varchar(256) NOT NULL, fotoKTP varchar(256) NOT NULL, waktuPendaftaran datetime2(0) NOT NULL, asalDomisiliID int NOT NULL, statusPesertaID int NOT NULL, asalSekolahID int NOT NULL, jurusanSekolahID int NOT NULL, PRIMARY KEY (userID));
+CREATE TABLE userMyITS (userID int NOT NULL IDENTITY, kodePendaftaran varchar(255) NOT NULL, namaLengkap varchar(255) NOT NULL, emailPeserta varchar(255) NOT NULL, password varchar(255) NOT NULL, NIK int NOT NULL, TTL date NOT NULL, jenisKelamin varchar(32) NOT NULL, pasFoto varchar(256) NOT NULL, scanKTP varchar(256) NOT NULL, scanKK varchar(256) NOT NULL, fotoKTP varchar(256) NOT NULL, waktuPendaftaran datetime2(0) NOT NULL, asalDomisiliID int NOT NULL, statusPesertaID int NOT NULL, asalSekolahID int NOT NULL, jurusanSekolahID int NOT NULL, PRIMARY KEY (userID));
 ALTER TABLE kota ADD CONSTRAINT FKkota600375 FOREIGN KEY (provinsiID) REFERENCES provinsi (provinsiID);
 ALTER TABLE pesertaIUP ADD CONSTRAINT FKpesertaIUP76449 FOREIGN KEY (userID) REFERENCES userMyITS (userID);
 ALTER TABLE userMyITS ADD CONSTRAINT FKuserMyITS498972 FOREIGN KEY (asalDomisiliID) REFERENCES kota (kotaID);
@@ -41,7 +41,7 @@ ALTER TABLE pesertaMandiri ADD CONSTRAINT FKpesertaMan786100 FOREIGN KEY (skorTK
 ALTER TABLE dayaTampung ADD CONSTRAINT FKdayaTampun686399 FOREIGN KEY (jalurID) REFERENCES jalur (jalurID);
 ALTER TABLE dayaTampung ADD CONSTRAINT FKdayaTampun712875 FOREIGN KEY (departemenID) REFERENCES departemen (departemenID);
 ALTER TABLE pesertaMandiri ADD CONSTRAINT FKpesertaMan612555 FOREIGN KEY (pilihan_1) REFERENCES departemen (departemenID);
-ALTER TABLE pesertaMandiri ADD CONSTRAINT FKpesertaMan819843 FOREIGN KEY (plihan_2) REFERENCES departemen (departemenID);
+ALTER TABLE pesertaMandiri ADD CONSTRAINT FKpesertaMan563493 FOREIGN KEY (pliihan_2) REFERENCES departemen (departemenID);
 ALTER TABLE pesertaMandiri ADD CONSTRAINT FKpesertaMan612557 FOREIGN KEY (pilihan_3) REFERENCES departemen (departemenID);
 ALTER TABLE pesertaMandiri ADD CONSTRAINT FKpesertaMan612558 FOREIGN KEY (pilihan_4) REFERENCES departemen (departemenID);
 ALTER TABLE pesertaIUP ADD CONSTRAINT FKpesertaIUP640285 FOREIGN KEY (pilihan_1) REFERENCES departemen (departemenID);

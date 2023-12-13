@@ -4,10 +4,10 @@
     (
         dateID INT IDENTITY(1,1) PRIMARY KEY,
         date DATETIME NOT NULL,
-		day VARCHAR NOT NULL,
-		month VARCHAR NOT NULL,
-		quarter VARCHAR NOT NULL,
-		quarterName VARCHAR NOT NULL,
+		day VARCHAR(255) NOT NULL,
+		month VARCHAR(255) NOT NULL,
+		quarter VARCHAR(255) NOT NULL,
+		quarterName VARCHAR(255) NOT NULL,
 		year CHAR NOT NULL
     );
 
@@ -16,7 +16,7 @@
     CREATE TABLE dim_jalur
     (
         jalurID INT IDENTITY(1,1) PRIMARY KEY,
-		namaJalur VARCHAR NOT NULL
+		namaJalur VARCHAR(255) NOT NULL
     );
 
 --dim_pendaftar
@@ -24,11 +24,11 @@
     CREATE TABLE dim_pendaftar
     (
         pendaftarID INT IDENTITY(1,1) PRIMARY KEY,
-		asalKota VARCHAR NOT NULL,
-		asalSekolah VARCHAR NOT NULL,
-		jurusanSekolah VARCHAR NOT NULL,
-		jenisKelamin VARCHAR NOT NULL,
-		asalProvinsi VARCHAR NOT NULL
+		asalKota VARCHAR(255) NOT NULL,
+		asalSekolah VARCHAR(255) NOT NULL,
+		jurusanSekolah VARCHAR(255) NOT NULL,
+		jenisKelamin VARCHAR(255) NOT NULL,
+		asalProvinsi VARCHAR(255) NOT NULL
     );
 
 --dim_departemen
@@ -36,8 +36,8 @@
     CREATE TABLE dim_departemen
     (
         departemenID INT IDENTITY(1,1) PRIMARY KEY,
-		namaDepartemen VARCHAR NOT NULL,
-		namaFakultas VARCHAR NOT NULL
+		namaDepartemen VARCHAR(255) NOT NULL,
+		namaFakultas VARCHAR(255) NOT NULL
     );
 
 --dim_status
@@ -45,7 +45,7 @@
     CREATE TABLE dim_status
     (
         statusID INT IDENTITY(1,1) PRIMARY KEY,
-		namaStatus VARCHAR NOT NULL
+		namaStatus VARCHAR(255) NOT NULL
     );
 
 --fact_dayaTampung

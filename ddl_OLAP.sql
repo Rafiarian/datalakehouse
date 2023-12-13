@@ -8,7 +8,7 @@
 		month VARCHAR(255) NOT NULL,
 		quarter VARCHAR(255) NOT NULL,
 		quarterName VARCHAR(255) NOT NULL,
-		year CHAR NOT NULL
+		year VARCHAR(4) NOT NULL
     );
 
 --dim_jalur

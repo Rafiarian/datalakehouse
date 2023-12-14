@@ -15,7 +15,7 @@
 	IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'dim_jalur')
     CREATE TABLE dim_jalur
     (
-        jalurID INT IDENTITY(1,1) PRIMARY KEY,
+        jalurID INT,
 		namaJalur VARCHAR(255) NOT NULL
     );
 
@@ -23,7 +23,7 @@
 	IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'dim_pendaftar')
     CREATE TABLE dim_pendaftar
     (
-        pendaftarID INT IDENTITY(1,1) PRIMARY KEY,
+        pendaftarID INT,
 		asalKota VARCHAR(255) NOT NULL,
 		asalSekolah VARCHAR(255) NOT NULL,
 		jurusanSekolah VARCHAR(255) NOT NULL,
@@ -35,7 +35,7 @@
 	IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'dim_departemen')
     CREATE TABLE dim_departemen
     (
-        departemenID INT IDENTITY(1,1) PRIMARY KEY,
+        departemenID INT,
 		namaDepartemen VARCHAR(255) NOT NULL,
 		namaFakultas VARCHAR(255) NOT NULL
     );

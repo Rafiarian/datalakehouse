@@ -45,7 +45,7 @@
 	IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'dim_status')
     CREATE TABLE dim_status
     (
-        statusID INT IDENTITY(1,1) PRIMARY KEY,
+        statusID PRIMARY KEY,
 		namaStatus VARCHAR(255) NOT NULL
     );
 

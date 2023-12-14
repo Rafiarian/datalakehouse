@@ -24,6 +24,7 @@
     CREATE TABLE dim_pendaftar
     (
         pendaftarID INT,
+		namaLengkap VARCHAR(255) NOT NULL,
 		asalKota VARCHAR(255) NOT NULL,
 		asalSekolah VARCHAR(255) NOT NULL,
 		jurusanSekolah VARCHAR(255) NOT NULL,

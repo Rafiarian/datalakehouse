@@ -506,13 +506,18 @@
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>ubah status mahasiswa baru</from>
+      <from>NRP Formula</from>
+      <to>Table output</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>ubah status tidak lolos seleksi</from>
       <to>NRP Formula</to>
       <enabled>Y</enabled>
     </hop>
     <hop>
-      <from>NRP Formula</from>
-      <to>Table output</to>
+      <from>ubah status mahasiswa baru</from>
+      <to>ubah status tidak lolos seleksi</to>
       <enabled>Y</enabled>
     </hop>
   </order>
@@ -666,7 +671,7 @@ FROM fact_seleksi</sql>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>64</xloc>
+      <xloc>128</xloc>
       <yloc>192</yloc>
       <draw>Y</draw>
     </GUI>
@@ -708,7 +713,7 @@ FROM fact_seleksi</sql>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>192</xloc>
+      <xloc>288</xloc>
       <yloc>192</yloc>
       <draw>Y</draw>
     </GUI>
@@ -762,7 +767,7 @@ FROM fact_seleksi</sql>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>336</xloc>
+      <xloc>432</xloc>
       <yloc>192</yloc>
       <draw>Y</draw>
     </GUI>
@@ -795,8 +800,8 @@ FROM fact_seleksi</sql>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>480</xloc>
-      <yloc>192</yloc>
+      <xloc>288</xloc>
+      <yloc>320</yloc>
       <draw>Y</draw>
     </GUI>
   </step>
@@ -863,8 +868,62 @@ FROM fact_seleksi</sql>
       </output>
     </remotesteps>
     <GUI>
-      <xloc>592</xloc>
-      <yloc>192</yloc>
+      <xloc>432</xloc>
+      <yloc>320</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>ubah status tidak lolos seleksi</name>
+    <type>ValueMapper</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <field_to_use>statusID</field_to_use>
+    <target_field/>
+    <non_match_default/>
+    <fields>
+      <field>
+        <source_value>13</source_value>
+        <target_value>20</target_value>
+      </field>
+      <field>
+        <source_value>14</source_value>
+        <target_value>20</target_value>
+      </field>
+      <field>
+        <source_value>15</source_value>
+        <target_value>20</target_value>
+      </field>
+      <field>
+        <source_value>16</source_value>
+        <target_value>20</target_value>
+      </field>
+      <field>
+        <source_value>17</source_value>
+        <target_value>20</target_value>
+      </field>
+      <field>
+        <source_value>18</source_value>
+        <target_value>20</target_value>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>128</xloc>
+      <yloc>320</yloc>
       <draw>Y</draw>
     </GUI>
   </step>

@@ -70,6 +70,7 @@
 		departemenID INT NOT NULL,
 		statusID INT NOT NULL,
 		nilaiRapor INT NOT NULL,
+		nilaiPortofolio INT NOT NULL,
 		nilaiPrestasi INT NOT NULL,
 		nilaiTKA INT NOT NULL,
 		nilaiSAT INT NOT NULL,

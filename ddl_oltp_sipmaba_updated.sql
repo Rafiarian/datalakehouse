@@ -9,7 +9,7 @@ CREATE TABLE jalur (jalurID int NOT NULL IDENTITY, namaJalur varchar(255), PRIMA
 -- SQLINES LICENSE FOR EVALUATION USE ONLY
 CREATE TABLE kota (kotaID int NOT NULL IDENTITY, namaKota varchar(255), provinsiID int NOT NULL, PRIMARY KEY (kotaID));
 -- SQLINES LICENSE FOR EVALUATION USE ONLY
-CREATE TABLE nilai (nilaiRapor int, nilaiPortofolio int, nilaiPrestasi int, nilaiTKA int, nilaiSAT int, nilaiCambridge int, userSIPMABApendaftarID int NOT NULL);
+CREATE TABLE nilai (nilaiRapor int, nilaiPrestasi int, nilaiTKA int, nilaiSAT int, nilaiCambridge int, userSIPMABApendaftarID int NOT NULL);
 -- SQLINES LICENSE FOR EVALUATION USE ONLY
 CREATE TABLE provinsi (provinsiID int NOT NULL IDENTITY, namaProvinsi varchar(255), PRIMARY KEY (provinsiID));
 -- SQLINES LICENSE FOR EVALUATION USE ONLY

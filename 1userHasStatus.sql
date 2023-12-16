@@ -17,5 +17,6 @@ INSERT INTO userHasStatus (namaStatus) VALUES ('Tidak Lolos Seleksi Mandiri Kemi
 INSERT INTO userHasStatus (namaStatus) VALUES ('Tidak Lolos Seleksi IUP');
 INSERT INTO userHasStatus (namaStatus) VALUES ('Tidak Lolos Seleksi Mandiri Prestasi');
 INSERT INTO userHasStatus (namaStatus) VALUES ('Mahasiswa Baru');
+INSERT INTO userHasStatus (namaStatus) VALUES ('Tidak Lolos Seleksi');
 
 select * from userHasStatus

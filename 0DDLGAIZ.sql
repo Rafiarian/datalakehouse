@@ -53,3 +53,5 @@ ALTER TABLE pesertaIUP ADD CONSTRAINT FKpesertaIUP213220 FOREIGN KEY (skorTKAID)
 ALTER TABLE nilaiRapor ADD CONSTRAINT FKnilaiRapor629143 FOREIGN KEY (jurusanSekolahID) REFERENCES jurusanSekolah (jurusanSekolahID);
 ALTER TABLE userMyITS ADD CONSTRAINT FKuserMyITS863111 FOREIGN KEY (asalSekolahID) REFERENCES asalSekolah (asalSekolahID);
 ALTER TABLE userMyITS ADD CONSTRAINT FKuserMyITS199164 FOREIGN KEY (jurusanSekolahID) REFERENCES jurusanSekolah (jurusanSekolahID);
+
+-- Coba
